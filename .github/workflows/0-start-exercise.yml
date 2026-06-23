@@ -69,6 +69,6 @@ jobs:
 
       - name: Enable next step workflow
         run: |
-          gh workflow enable "Step 1"
+          gh workflow enable ".github/workflows/1-first-codespace.yml"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
